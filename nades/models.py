@@ -30,6 +30,11 @@ class Granada(models.Model):
     thumbnail   = models.URLField(blank=True)
     origem_url  = models.URLField(blank=True)
     criado_em   = models.DateTimeField(auto_now_add=True)
+    posicao     = models.CharField(max_length=200, blank=True)
+    model_state = models.CharField(max_length=100, blank=True)
+    throw_type  = models.CharField(max_length=100, blank=True)
+    move_keys   = models.CharField(max_length=200, blank=True)
+    air_time    = models.CharField(max_length=50, blank=True)
 
     def __str__(self):
         return f"{self.mapa} | {self.tipo} | {self.destino} ({self.origem})"
