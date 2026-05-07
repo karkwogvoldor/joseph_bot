@@ -61,7 +61,8 @@ async def smoke(ctx, mapa: str, destino: str = None):
             
             if len(resultados) == 1:
                 granada = resultados[0]
-                await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})\n{granada.video_url}')
+                await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
+                await ctx.send(granada.video_url)
                 return
 
             resposta = f'🟡 **Smokes para {destino_escolhido} no {mapa}:**\n\n'
@@ -83,7 +84,8 @@ async def smoke(ctx, mapa: str, destino: str = None):
                 return
 
             granada = resultados[escolha2 - 1]
-            await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})\n{granada.video_url}')
+            await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
+            await ctx.send(granada.video_url)
 
         except TimeoutError:
             await ctx.send(f'⏱️ Tempo esgotado. Use `!smoke {mapa}` para tentar novamente.')
@@ -124,7 +126,8 @@ async def smoke(ctx, mapa: str, destino: str = None):
                 return
 
             granada = resultados[escolha - 1]
-            await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})\n{granada.video_url}')
+            await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
+            await ctx.send(granada.video_url)
 
         except TimeoutError:
             await ctx.send('⏱️ Tempo esgotado. Use `!smoke {mapa} {destino}` para tentar novamente.')
