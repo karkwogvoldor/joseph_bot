@@ -5,6 +5,11 @@ import discord
 import os
 from bot.traducoes import TRADUCOES
 
+from bot.traducoes import TRADUCOES, NOMES_PT
+
+def traduzir_nome(mapa: str, nome_en: str) -> str:
+    return NOMES_PT.get(mapa.lower(), {}).get(nome_en, nome_en)
+
 def resolver_destino(mapa: str, termo: str) -> str:
     mapa_traducoes = TRADUCOES.get(mapa.lower(), {})
     termo_lower = termo.lower()
@@ -31,6 +36,8 @@ async def smoke(ctx, mapa: str, destino: str = None):
             mapa__slug=mapa.lower(),
             tipo='smoke'
         ).values_list('destino', flat=True).distinct()))
+        
+
 
         destinos = await buscar()
 

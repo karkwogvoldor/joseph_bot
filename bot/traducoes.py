@@ -1,3 +1,4 @@
+#usado para os inputs de usuários
 TRADUCOES = {
     'mirage': {
         'Window':       ['window', 'janela', 'janelao', 'janelão'],
@@ -20,5 +21,30 @@ TRADUCOES = {
     'inferno': {
         'banana':    ['banana'],
         'apartments': ['apartments', 'apts', 'aptos'],
+    }
+}
+
+#usado para os menus
+NOMES_PT = {
+    'mirage': {
+        'Window':           'Janela',
+        'Short':            'Short',
+        'Connector':        'Conector',
+        'Catwalk':          'Passarela',
+        'Jungle':           'Mato',
+        'Stairs':           'Escada',
+        'Palace':           'Palácio',
+        'Ramp':             'Rampa',
+        'B Site':           'Site B',
+        'A Site':           'Site A',
+        'Top Mid':          'Topo do Mid',
+    },
+    'overpass': {
+        'Bank':             'Bank',
+        'Bridge':           'Ponte',
+        'Heaven':           'Céu',
+        'Monster':          'Monstro',
+        'Toilets':          'Banheiro',
+        'Trash':            'Lixo',
     }
 }
