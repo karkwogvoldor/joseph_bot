@@ -3,6 +3,17 @@ from nades.models import Granada
 from discord.ext import commands
 import discord
 import os
+from bot.traducoes import TRADUCOES
+
+def resolver_destino(mapa: str, termo: str) -> str:
+    mapa_traducoes = TRADUCOES.get(mapa.lower(), {})
+    termo_lower = termo.lower()
+    
+    for destino_en, aliases in mapa_traducoes.items():
+        if termo_lower in [a.lower() for a in aliases]:
+            return destino_en
+    
+    return termo
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -54,7 +65,7 @@ async def smoke(ctx, mapa: str, destino: str = None):
             buscar_origens = sync_to_async(lambda: list(Granada.objects.filter(
                 mapa__slug=mapa.lower(),
                 tipo='smoke',
-                destino__iexact=destino_escolhido
+                destino__iexact=resolver_destino(mapa, destino_escolhido)
             )))
 
             resultados = await buscar_origens()
@@ -94,7 +105,7 @@ async def smoke(ctx, mapa: str, destino: str = None):
         buscar = sync_to_async(lambda: list(Granada.objects.filter(
             mapa__slug=mapa.lower(),
             tipo='smoke',
-            destino__iexact=destino.lower()
+            destino__iexact=resolver_destino(mapa, destino)
         )))
 
         resultados = await buscar()

@@ -60,8 +60,8 @@ class Command(BaseCommand):
 
                 tipo        = nade_data.get('nadeType', '')
                 destino     = (nade_data.get('target') or {}).get('targetDisplayName') or ''
-                origem      = (nade_data.get('origin') or {}).get('originDisplayName') or ''
-                lado        = nade_data.get('baseTeam', '')
+                origem = (nade_data.get('origin') or {}).get('originDisplayName') or ''
+                lado        = nade_data.get('baseTeam') or ''
                 posicao     = nade_data.get('setPos', '')
                 model_state = nade_data.get('modelState', '')
                 throw_type  = nade_data.get('throwType', '')
@@ -79,25 +79,28 @@ class Command(BaseCommand):
                         if variants:
                             thumbnail = variants[0]['data'].get('jpg', '')
 
-                origem_url = f"https://csnades.app{nade.get('urlTitleName', '')}"
+                url_title = nade.get('urlTitleName') or ''
+                origem_url = f"https://csnades.app{url_title}" if url_title else ''
 
-                if not destino or not video_url:
+
+                if not destino or not tipo or not video_url or not origem_url:
                     ignoradas += 1
                     continue
 
-                Granada.objects.get_or_create(
-                    mapa=mapa_obj,
-                    tipo=tipo,
-                    destino=destino,
-                    origem=origem,
+                Granada.objects.update_or_create(
+                    origem_url=origem_url,
                     defaults={
+                        'mapa':        mapa_obj,
+                        'tipo':        tipo,
+                        'destino':     destino,
+                        'origem':      origem,
                         'lado':        lado,
                         'video_url':   video_url,
                         'thumbnail':   thumbnail,
-                        'origem_url':  origem_url,
                         'posicao':     posicao,
                         'model_state': model_state,
                         'throw_type':  throw_type,
+                        'descricao':   descricao,
                     }
                 )
                 criadas += 1

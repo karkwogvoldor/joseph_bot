@@ -35,6 +35,7 @@ class Granada(models.Model):
     throw_type  = models.CharField(max_length=100, blank=True)
     move_keys   = models.CharField(max_length=200, blank=True)
     air_time    = models.CharField(max_length=50, blank=True)
+    descricao   = models.TextField(blank=True)
 
     def __str__(self):
         return f"{self.mapa} | {self.tipo} | {self.destino} ({self.origem})"
