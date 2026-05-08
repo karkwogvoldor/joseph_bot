@@ -3,8 +3,6 @@ from nades.models import Granada
 from discord.ext import commands
 import discord
 import os
-from bot.traducoes import TRADUCOES
-
 from bot.traducoes import TRADUCOES, NOMES_PT
 
 def traduzir_nome(mapa: str, nome_en: str) -> str:
@@ -28,24 +26,37 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'Bot conectado como {bot.user}')
-
+    
 @bot.command(name='smoke')
-async def smoke(ctx, mapa: str, destino: str = None):
+async def smoke(ctx, mapa, destino=None):
+    await buscar_nade(ctx, mapa, destino, 'smoke')
+
+@bot.command(name='flash')
+async def flash(ctx, mapa, destino=None):
+    await buscar_nade(ctx, mapa, destino, 'flash')
+    
+@bot.command(name='he')
+async def he(ctx, mapa, destino=None):
+    await buscar_nade(ctx, mapa, destino, 'he')
+    
+@bot.command(name='molotov')
+async def molotov(ctx, mapa, destino=None):
+    await buscar_nade(ctx, mapa, destino, 'molotov')
+    
+async def buscar_nade(ctx, mapa: str, destino, tipo):
     if destino is None:
         buscar = sync_to_async(lambda: list(Granada.objects.filter(
             mapa__slug=mapa.lower(),
-            tipo='smoke'
+            tipo=tipo
         ).values_list('destino', flat=True).distinct()))
-        
-
 
         destinos = await buscar()
 
         if not destinos:
-            await ctx.send(f'Nenhuma smoke encontrada para o mapa **{mapa}**.')
+            await ctx.send(f'Nenhuma {tipo} encontrada para o mapa **{mapa}**.')
             return
 
-        resposta = f'🟡 **Smokes disponíveis no {mapa}:**\n\n'
+        resposta = f'🟡 **{tipo.capitalize()}s disponíveis no {mapa}:**\n\n'
         for i, d in enumerate(destinos, 1):
             resposta += f'`{i}` - {d}\n'
         resposta += '\nDigite o número do destino:'
@@ -64,14 +75,14 @@ async def smoke(ctx, mapa: str, destino: str = None):
             escolha = int(msg.content)
 
             if escolha < 1 or escolha > len(destinos):
-                await ctx.send(f'❌ Opção inválida. Use `!smoke {mapa}` para tentar novamente.')
+                await ctx.send(f'❌ Opção inválida. Use `!{tipo} {mapa}` para tentar novamente.')
                 return
 
             destino_escolhido = destinos[escolha - 1]
 
             buscar_origens = sync_to_async(lambda: list(Granada.objects.filter(
                 mapa__slug=mapa.lower(),
-                tipo='smoke',
+                tipo=tipo,
                 destino__iexact=resolver_destino(mapa, destino_escolhido)
             )))
 
@@ -83,7 +94,7 @@ async def smoke(ctx, mapa: str, destino: str = None):
                 await ctx.send(granada.video_url)
                 return
 
-            resposta = f'🟡 **Smokes para {destino_escolhido} no {mapa}:**\n\n'
+            resposta = f'🟡 **{tipo.capitalize()}s para {destino_escolhido} no {mapa}:**\n\n'
             for i, g in enumerate(resultados, 1):
                 resposta += f'`{i}` - {g.origem} ({g.lado})\n'
             resposta += '\nDigite o número da opção:'
@@ -106,22 +117,22 @@ async def smoke(ctx, mapa: str, destino: str = None):
             await ctx.send(granada.video_url)
 
         except TimeoutError:
-            await ctx.send(f'⏱️ Tempo esgotado. Use `!smoke {mapa}` para tentar novamente.')
+            await ctx.send(f'⏱️ Tempo esgotado. Use `!{tipo} {mapa}` para tentar novamente.')
 
     else:
         buscar = sync_to_async(lambda: list(Granada.objects.filter(
             mapa__slug=mapa.lower(),
-            tipo='smoke',
+            tipo=tipo,
             destino__iexact=resolver_destino(mapa, destino)
         )))
 
         resultados = await buscar()
 
         if not resultados:
-            await ctx.send(f'Nenhuma smoke encontrada para **{destino}** no mapa **{mapa}**.')
+            await ctx.send(f'Nenhuma {tipo} encontrada para **{destino}** no mapa **{mapa}**.')
             return
 
-        resposta = f'🟡 **Smokes para {destino} no {mapa}:**\n\n'
+        resposta = f'🟡 **{tipo.capitalize()}s para {destino} no {mapa}:**\n\n'
         for i, g in enumerate(resultados, 1):
             resposta += f'`{i}` - {g.origem} ({g.lado})\n'
         resposta += '\nDigite o número da opção:'
@@ -134,13 +145,13 @@ async def smoke(ctx, mapa: str, destino: str = None):
             msg = await bot.wait_for('message', check=check, timeout=30.0)
 
             if not msg.content.isdigit():
-                await ctx.send('❌ Digite apenas o número da opção. Use `!smoke {mapa} {destino}` para tentar novamente.')
+                await ctx.send(f'❌ Digite apenas o número da opção. Use `!{tipo} {mapa} {destino}` para tentar novamente.')
                 return
 
             escolha = int(msg.content)
 
             if escolha < 1 or escolha > len(resultados):
-                await ctx.send(f'❌ Opção inválida. Use `!smoke {mapa} {destino}` para tentar novamente.')
+                await ctx.send(f'❌ Opção inválida. Use `!{tipo} {mapa} {destino}` para tentar novamente.')
                 return
 
             granada = resultados[escolha - 1]
@@ -148,4 +159,4 @@ async def smoke(ctx, mapa: str, destino: str = None):
             await ctx.send(granada.video_url)
 
         except TimeoutError:
-            await ctx.send('⏱️ Tempo esgotado. Use `!smoke {mapa} {destino}` para tentar novamente.')
+            await ctx.send(f'⏱️ Tempo esgotado. Use `!{tipo} {mapa} {destino}` para tentar novamente.')
