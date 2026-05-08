@@ -5,6 +5,7 @@ import discord
 import os
 from urllib.parse import quote
 from bot.traducoes import TRADUCOES, NOMES_PT
+from nades.models import Granada, Mapa
 
 def traduzir_nome(mapa: str, nome_en: str) -> str:
     return NOMES_PT.get(mapa.lower(), {}).get(nome_en, nome_en)
@@ -22,7 +23,41 @@ def resolver_destino(mapa: str, termo: str) -> str:
 intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
+
+@bot.command(name='mapas')
+async def mapas(ctx):
+    buscar = sync_to_async(lambda: list(Mapa.objects.all().values_list('slug', flat=True)))
+    mapas = await buscar()
+    
+    resposta = '🗺️ **Mapas disponíveis:**\n\n'
+    for i, m in enumerate(mapas, 1):
+        resposta += f'`{i}` - {m}\n'
+    
+    await ctx.send(resposta)
+    
+@bot.command(name='tipos')
+async def tipos(ctx):
+    resposta = '💣 **Tipos de granadas disponíveis:**\n\n'
+    resposta += '`1` - 💨 smoke\n'
+    resposta += '`2` - ⚡ flash\n'
+    resposta += '`3` - 🔥 molotov\n'
+    resposta += '`4` - 💥 he\n'
+    await ctx.send(resposta)
+    
+@bot.command(name='help')
+async def help_cmd(ctx):
+    resposta = '📖 **Comandos disponíveis:**\n'
+    resposta += '🕹️ Navegue de forma interativa buscando por número a granada desejada!\n\n'
+    resposta += '💨 `!smoke <mapa> <destino>` — busca smokes\n'
+    resposta += '⚡ `!flash <mapa> <destino>` — busca flashbangs\n'
+    resposta += '🔥 `!molotov <mapa> <destino>` — busca molotovs\n'
+    resposta += '💥 `!he <mapa> <destino>` — busca granadas HE\n\n'
+    resposta += '🗺️ `!mapas` — lista os mapas disponíveis\n'
+    resposta += '💣 `!tipos` — lista os tipos de granadas\n'
+    resposta += '📖 `!help` — exibe essa mensagem\n\n'
+    resposta += '💡 O `<destino>` é opcional — sem ele o bot lista os destinos disponíveis!\n'
+    await ctx.send(resposta)
 
 def formatar_info(granada) -> str:
     info = '📋 **Como executar:**\n'
