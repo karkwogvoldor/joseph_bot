@@ -3,6 +3,7 @@ from nades.models import Granada
 from discord.ext import commands
 import discord
 import os
+from urllib.parse import quote
 from bot.traducoes import TRADUCOES, NOMES_PT
 
 def traduzir_nome(mapa: str, nome_en: str) -> str:
@@ -22,6 +23,20 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
+
+def formatar_info(granada) -> str:
+    info = '📋 **Como executar:**\n'
+    
+    if granada.model_state:
+        info += f'🧍 Posição: {granada.model_state}\n'
+    if granada.throw_type:
+        info += f'🖱️ Throw: {granada.throw_type}\n'
+    if granada.move_keys:
+        info += f'⌨️ Teclas: {granada.move_keys}\n'
+    if granada.descricao:
+        info += f'📝 {granada.descricao}\n'
+    
+    return info
 
 @bot.event
 async def on_ready():
@@ -92,6 +107,7 @@ async def buscar_nade(ctx, mapa: str, destino, tipo):
                 granada = resultados[0]
                 await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
                 await ctx.send(granada.video_url)
+                await ctx.send(formatar_info(granada))
                 return
 
             resposta = f'🟡 **{tipo.capitalize()}s para {destino_escolhido} no {mapa}:**\n\n'
@@ -115,6 +131,7 @@ async def buscar_nade(ctx, mapa: str, destino, tipo):
             granada = resultados[escolha2 - 1]
             await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
             await ctx.send(granada.video_url)
+            await ctx.send(formatar_info(granada))
 
         except TimeoutError:
             await ctx.send(f'⏱️ Tempo esgotado. Use `!{tipo} {mapa}` para tentar novamente.')
@@ -157,6 +174,7 @@ async def buscar_nade(ctx, mapa: str, destino, tipo):
             granada = resultados[escolha - 1]
             await ctx.send(f'🎬 **{granada.destino}** | {granada.origem} ({granada.lado})')
             await ctx.send(granada.video_url)
+            await ctx.send(formatar_info(granada))
 
         except TimeoutError:
             await ctx.send(f'⏱️ Tempo esgotado. Use `!{tipo} {mapa} {destino}` para tentar novamente.')
