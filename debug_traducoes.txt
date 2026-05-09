@@ -1,0 +1,524 @@
+=== THROW TYPES ===
+left click
+left jumpthrow
+left+right click
+left+right jumpthrow
+right click
+right jumpthrow
+
+=== MODEL STATES ===
+crouch
+stand
+
+=== MOVE KEYS ===
+
+=== DESCRIÇÕES ===
+### 1st and 2nd Oranges Molotov from Car
+Aim at middle of right part of this window structure (follow images) and jumpthrow for a consistent burn on the 1st and 2nd oranges. Works well in conjunction with [this smoke](/inferno/clpy8oaxa0002l308y2i1iqzm).
+
+### A Site Flash from Kitchen
+Flash to support teammates fighting for A site as you rotate from B Site.
+
+**Technique:**  
+Loose lineup, just don't hit wall, there is no perfect way to throw this; shown one is example.
+
+### A Site Flash from T Spawn
+Flash to support teammates exiting ramp. Similar to [this flash](/mirage/clmc6lsoy006yig74lx0oipog) but blinds more angles.
+
+**Technique:**  
+Loose positioning and loose lineup.
+
+### Apps Flash from Plant
+Defensive flash used when TTs running apps. You can easily peek after this flash.
+
+**Technique:**  
+Lineup is not strict, aim somwhere at height of this wood beam and right click.
+
+### Apps Flash from Van
+Support flash for teammate taking apps.
+
+**Technique:**  
+Crouch, aim at this dark spot, press W for 1 second and jumpthrow (crouching).
+
+### Apps Flash from Window Frame
+Flash to support teammate peeking apps from plant/van. Very powerful flash with no time to react.
+
+### Apps Smoke from Trash
+Smoke for start of round to delay TTs entering B Site.
+
+**Technique:**  
+Aim at the bottom of light part of tarp.
+The lineup can be executed in various ways, but this particular one is easiest to memorize and ensures 100% repeatability.
+
+### Apps Smoke from Van
+Apps resmoke or to delay TTs entering B Site as you expect them to do so.
+
+**Technique:**  
+Aim between windows at height of leftside window arch. Loose positioning. 
+
+### Blow Window HE
+Throw this HE grenade to break the smoke on window. It can serve as support for a teammate or yourself, allowing you to peek from same position.
+
+**Technique:**  
+Aim at ceiling edge from anywhere of this step turned to window.
+
+### Connector Molotov from Top Mid
+Running version of [this molotov](/mirage/clmc4dqtd002wig74r5uif9a4).
+
+### Connector Molotov from Underpass
+Jiggle to check if CT is looking at underpass and throw to burn annoying angle.  
+Purpose of this molotov is to burn left side corner of connector.
+
+### Connector Support Flash from Ramp
+Flash to help teammates peek connector when it's not smoked.
+
+### Ct Boost Smoke from Half Wall
+Aim slightly above brick roof and wooden beam intersection (as on video). Left+Right Jumpthrow.
+
+**How to get on half wall?**
+1. Jump from barrels (might be little hard)
+2. Get boosted from teammate
+
+### Dark Molotov from Half Wall
+Aim at darker part of wall thats aligned with window bar and jupthrow. This will fully burn dark.
+
+**How to get on half wall?**
+1. Jump from barrels (might be little hard)
+2. Get boosted from teammate
+
+### Deep Apps Smoke from Van
+Smoke to take apps control, can be combined with some molotov/flash.
+
+### Defensive B Flash from 1st Oranges
+Throw this flash as TTs are approaching the B site. It will blind/force them to turn away from the site. Since the flash explodes behind this tiny wall, it won't blind you much. This will blind anyone entering B unless thay are closer to car and hugging wall.
+### Defensive B Flash from Coffin
+Throw this flash as TTs are inside pool/close to B site. It will blind/force them to turn away from coffins.
+
+### Donut Smoke from T Spawn
+
+**Technique:**  
+Position yourself anywhere of that part of wall as long as you can see this little window where you aim at and jumpthrow.
+
+### Firebox Molotov from Tetris
+Molotov to burn firebox as you are safe behind boxes.
+
+**Technique:**  
+Loose lineup.
+
+### Flash B Site from Half Wall
+Flash to support teammates entering B site. Will blind most spots looking at B entrance.
+
+**Technique:**  
+Aim at dark dot on painted poster and **left+right jumpthrow**.
+
+**How to get on half wall?**
+1. Jump from barrels (might be little hard)
+2. Get boosted from teammate
+
+### Flash Car from Coffin
+Flash to support teammate that is peeking car area from corner. Purpuse of this flash is to blind players that are in car area.
+
+**Technique:**
+Walk (shift) a bit forward and throw at that roof part. Loose forgivable lineup.
+
+### HE 2nd Oranges from Car
+HE grenade to damage players that are playing 2nd oranges. Might be thrown before [this molotov](/inferno/clpy8xevf0000jr08vf24v7np).
+
+**Technique:**
+Aim slightly above dark spot on plank and jumpthrow. Forgiveable lineup.
+
+### HE Banana from Corner
+Initial HE grenade as you come from CT Spawn to damage players that are rushing banana.
+
+### Jaguar Smoke from T Spawn
+
+**Technique:**
+Find that darker part between bricks aim in the middle and jumpthrow.
+
+### Jungle Molotov from Default
+Molotov to stop/delay CTs from retaking A site.
+
+**Technique:**  
+Aim at height of that shorter part sticking out of roof on the right.  
+Aim above that roof support wood beam and left click.
+
+### Jungle+Connector Smoke from T Spawn
+Smoke for fast A execute.
+
+**Technique:**  
+Jumpthrow as you approach fence on left side.
+
+### Kitchen Door Smoke from Back Alley
+A standard smoke for a B execute, commonly paired with [this window smoke](/mirage/clmeovqkw002oigcqo7jf6dd1).
+### Main Smoke from A Site
+
+**Technique:**  
+Crouch and aim at end of "mirrored Z" shaped wall stain, stand and jumpthrow.
+
+### Mid Boxes Flash from Top Mid
+Flash to blind CTs holding top mid from bottom connector.
+Might be combined with:  
+- [this flash](/mirage/clmbyfuz5002sig74cp0v551d) 
+- [this flash](/mirage/clmby6fme002eig74rlh0rjgc)
+- [this flash](/mirage/clmby2u4o0026ig7495l3qkc0)
+
+### Mid Boxes Flash from Top Mid
+This will blind short/mid ramp/underpass CT players looking at top mid corner. It pops behind boxes, so it won't blind TTs.  
+Might be combined with:  
+- [this flash](/mirage/clmbybe95002kig74ntpuwnyh) 
+- [this flash](/mirage/clmby6fme002eig74rlh0rjgc)
+- [this flash](/mirage/clmby2u4o0026ig7495l3qkc0)
+
+### Mid Boxes Molotov from Window
+This Molotov is used to burn the mid boxes when TTs have smoked off window, to help short/underpass/connector teammates fight for mid. If you're already in jungle, you can use [this lineup](/mirage/clp1qzck30000lc081e1v1xbz) instead.
+
+**Technique:**  
+Pre-aim and don't move the mouse from this point. Go to the corner, press W, and release before hitting the window. It requires practice as it's intended to be thrown from inside the window smoke. With practice Can beperformed without stopping in vents
+
+### Mid Boxes Molotov from Window
+This Molotov is used to burn the mid boxes when TTs have smoked off window, to help short/underpass/connector teammates fight for mid. If you're going through vents, you can use [this faster lineup](/mirage/clp3t47f60000lc08ozyhl79h) instead.
+
+**Technique:**  
+Pre-aim and don't move the mouse from this point. Go to the corner, press W, and release before hitting the window. It requires practice as it's intended to be thrown from inside the window smoke.
+
+### Mid Flash from Firebox
+Support flash for teammates walking out/peeking mid from bottom connector and peeking from window.
+
+**Technique:**  
+It's loose lineup, just don't hit wall, there is no perfect way to throw this; shown one is example.
+
+### Mid Support Flash from Alley
+Use this support flash for teammates walking out top mid. The flash pops back over the heads of TTs and won't blind them much.
+
+### Molotov Banana from Corner
+Molotov to disable TTs peeking you from this 2 corners as you peek from car/half wall. Molotov not always fully burns corners.
+
+### Molotov Car from Fountain
+Molotov to push out/back from car. Used as support to retake car area by CTs.
+
+### Molotov Default from CT
+Molotov to prevent default plant by TTs when they smoke off CT.
+
+### Molotov Default from Connector
+- Molotov to prevent default plant by TTs when they smoke off Connector/Jungle. 
+- Molotov to clear default when you are retaking A site.
+
+### Molotov Half Wall from Coffin
+Molotov to push out/back from half wall. Used as support to retake car area by CTs, combined with [this smoke](/inferno/clpyq7adv0002lf08pjphany8). 
+
+### Molotov Sandbags from Logs
+Molotov to push CTs out from sandbags. Used as support to take car area by TTs.
+
+**Technique:**
+Run 1-2 steps forward and throw, just dont't walk into barrels infront of you.
+
+### Molotov Ticket from Ramp
+
+**Technique:**  
+Stand anywhere along the wall/boxes where you don't hit the wall with nade. Align vertically with middle of CT box. Aim at edge of box next to you as shown in image.
+
+### Molotov Ticket from Tetris
+Helpful molotov to push CTs out from ticket when CT smoke expires.
+
+### One Way Smoke Bench from Firebox
+One Way smoke to peek from bench as TTs are entering A site.
+
+**Technique:**  
+Align with left side of box and right click at this shadow part, then get on bench.
+
+### Palace Smoke from CT Spawn
+Smoke for A retake.
+
+### Palace Smoke from Dark
+
+**Technique:**  
+Aim to the left of bigest wall scratch and simultaneously: +w and throw.  
+High margin for errors.
+
+### Palace Smoke from Kitchen
+Smoke for A retake.
+
+### Palace Smoke from Ticket
+This smoke is challenging to throw due to a narrow margin for throw time between the wall and box.
+
+**Technique:**  
+Align yourself so that the ticket and the right side of that wall join together. Aim below the left side of that "roof tooth" at the height of the second row of bricks spacing, counting from the top of weird "stairs door".  
+Need practice to get it right.
+
+### Post Plant Molotov A Site from Ramp
+Good way to delay defuse by CTs without peeking A site.
+
+**Technique:**  
+Aim at antena base height above lighter edge of stairs. Throw at halfway of stairs.
+
+### Quad Molotov from Car
+When executed correctly, this Molotov will consistently burn the back of quad.
+
+### Ramp Flash from A Site
+Flash to support teammates taking ramp. Notice this flash probably won't blind TTs holding tight angle from bottom ramp.
+
+### Ramp Molotov from CT
+Considered essential for regular rounds, this Molotov should be thrown every round by the first A spawn, while the second spawn is supposed to throw [this flash](/mirage/clp2ykgfi000el308v98gizgx).
+Molotov used to:  
+- prevent TTs closest spawn from rushing ramp and killing teamate passing from firebox to stairs/connector.
+- prevent TTs from rushing ramp in general.
+
+### Retake Molotov Ninja+Default from Jungle
+Molotov for A retake to clear ninja and default. This molotov is intended to be thrown when you are smoked off.
+
+### Self Flash Boiler from Appartments
+This flash bounce 2 times before pop and everyone that is potentially be blind, will hear that. Flash for yourself to peek boiler. This will blind anyone that is looking at boiler exit, even AWP holding tight angle from long.
+
+### Self Flash Car from Sandbags
+Flash for yourself to peek car. This will blind anyone that is close and looking at car. Players that are looking from far away (ie. TT ramp) are not going to be blind too much. Most often used with deep banana smoke.
+### Self Flash Mid from Short
+
+Flash for yourself to peek mid. This will blind anyone looking at that (short) corner. Players looking from far away (i.e., TT ramp) won't be blinded as much. The flash lands at a distance from the corner, so someone holding a tight angle from the right side of your peek probably won't get hit by it there.
+
+**Technique:**  
+Aim slightly to right (about 1/3 length) of that lamp support triangle top left joint for best result. Alternatively aim straight at that joint (will land farther away from the corner)
+
+### Self Flash to peek Underpass  
+Flash for yourself to jump out and peek underpass. This will blind anyone that is looking at stairs.
+
+**Technique:**
+Very loose lineup, just aim somewhere in middle of wall and height of bricks as on video.
+
+### Self Window Flash
+
+Use this flash to peek window for yourself. It effectively blinds anyone close and looking at the window. However, players at a distance (e.g., near the boxes) won't be affected as much.
+
+### Short Smoke from Underpass
+Throw slightly to left of top right part of bench as you exit underpass. Doesn't matter if you run left/center/right side of underpass. Preatty forgivible lineup, need some pracice.
+
+### Smoke A Site from Ticket
+Defensive smoke that give you space as TTs entering A site.
+
+### Smoke Banana from Coffin
+Smoke to cut off banana from car area. Used to retake car area by CTs.
+
+### Smoke Deep Banana from Corner
+Smoke to cut off ramp from banana. Used to retake banana control.
+
+**Technique:**
+Take about 2 steps forward and throw while running.
+### Smoke Half Wall from Fountain
+Smoke to cut off banana from car area. Used as support to retake car area by CTs.
+
+### Stairs Smoke from T Roof
+Smoke for A execute. Can be thrown right after [this jungle smoke](/mirage/clmc63t2s005yig74etvk7uua)
+
+**Technique:**
+Aim at top of wevey part of texture between bricks and **left+right jumpthrow**.  
+Smoke need precision and practice to get it right for your setup.
+
+### Stairs Smoke from T Spawn
+Smoke for A rush, combined with [this smoke](/mirage/clp2x2h0v0000l408j9v6qk7a). Alternatively you can throw [that smoke](/mirage/clp2x4st00004l308p01zdaqu) instead of current one.
+
+**Technique:**  
+Tap W + JUMPTHROW.
+
+### Support Connector Flash from Top Mid
+Support flash to blind CT's holding bottom connector with tight angle.
+
+**Technique:**  
+Move out from the wall just to be able to see brown window.
+
+### Support Flash over Car
+Use this flash to support a teammate peeking banana from car. The purpose of this flash is to blind players close to the car. Align somewhere along that part of the wall.
+
+### Top Connector One Way Smoke from Jungle
+One Way smoke to suprise TTs peeking top connector from mid.
+
+### Top Mid Flash from Firebox/CT
+This flash is support for teammates peeking top mid from window. Its role is to make it more challenging for TTs contesting the window teammate.  
+Considered essential for regular rounds, this flash should be thrown every round by the second A spawn (the second player closest to A Site), while the first spawn is supposed to throw [this molotov](/mirage/clmew0n700070igcqgy6vyool).
+
+**Technique:**  
+It's loose lineup, just don't hit wall, there is no perfect way to throw this; shown one is example.
+
+### Top Mid Smoke from CT Spawn
+Pair with molotov thrown from connector make it hard for TTs to take mid control.
+
+**Technique:**  
+Lineup vertically with building joint, horizontally in middle of wires. Run forward, don't move mouse and start walking, so you are comfortable beeing ready to jumpthrow when your crosshair meet white building taint.  
+Throw setPos: setpos_exact -1809.237793 -1870.313843 -263.968750;setang_exact 0.000000 36.353760 0.000000setpos -1809.237793 -1870.313843 -201.243835;setang -29.153259 36.353760 0.000000
+
+### Window Smoke Blow HE
+Throw this HE grenade to break smoke on window. It can serve as support for a teammate or yourself, allowing you to run to window and peek immediately after.
+
+**Apps Retake Support Flash**
+Align with proper corner i.e. bottom left.
+**B Defensive Smoke**  
+This smoke will give you advantage over TT's entering from sewers and may delay push.
+**He to destroy doors.**  
+You can followup with [this flash](/overpass/clmq9dhc2003migwh4np6lan2).  
+You can alignt anywhere along wooden wall. Aim below darker part of green leafs. Has big margin.
+**Molotov for water retake as CT.**   
+You can followup with [this flash](/overpass/clmuovnc10000l709ufvi6cra).
+**Molotov to stop TT's from taking control over water.**
+**Ramp retake flash**
+Lineup before throw in way you don't see white right part of top brick. Align vertically with wooden beam. Aim slightly below shadow line.
+**Short Smoke for B Exec**  
+Good smoke to cutoff player from short
+
+**Technique:**
+Aim between red rug and tower like on video.
+As you can see on video  
+vertical margin is preatty big,  
+horizontal margin is preatty small
+
+**Short Smoke for B Rush**
+Good smoke to cutoff player from short.  
+**Technique:**
+Aim at level of that roof thingy on the right and above darker part of the wall as like on video.
+**Short Smoke for Mid Control**
+Initial smoke to cutoff player from short and make it easier to fight mid.
+**Short Smoke on fly**
+It's loose lineup; shown one is example.
+
+
+**Support flash to help clear water**  
+This flash will blind anyone watching short.  
+You can chain with [this molotov](https://csnades.app/overpass/clmq9o56k003yigwhiep5nukm).
+**Support flash to peek monster.**  
+Throw this flash to help your teammate clearing monster.
+**Support flash to peek short pipe.**  
+Throw this flash to help your teammate take control over water.
+**Very good flash to walkup from phenix at TT or CT**
+Right side of exit is also falshed.
+**Video is recorded in 4:3** so reference point will be different for 16:9 (check images, we will add video soon)  
+For 4:3 throw when right edge of screen cross tip of triangle.  
+For 16:9 throw when right edge of screen cross bricks separation (check images). 
+
+throw pos: setpos_exact -658.559448 -1754.560425 149.090500;setang_exact 0.000000 114.237915 0.000000 setpos -658.559448 -1754.560425 212.613327;setang -1.513702 114.237915 0.000000
+**Window Post Plant Smoke**  
+Good grenade to re-smoke window after plant to delay/make it harder for CTs to push through.  
+
+**Technique:**
+Aim at darker dot at wall and jumpthrow.
+
+**Window Smoke for B Exec**  
+Compared to [standard smoke](/mirage/clmeovqkw002oigcqo7jf6dd1) this one has smaller airtime (6.28 compared to 7.45) and from this position you can start throwing flashes over apps right after.
+
+Pros:
+ - faster smoke
+ - can start throwing flashes over apps right after
+
+Cons:
+ - is harder to throw
+
+- can be thrown from any side of that corner
+- can be thrown while coruching or standing
+Aim at 3/4 height of that thingy.
+Aim at that darker dot as shown in image or little higher. Alternative smoke for [this lineup](/mirage/clmc63t2s005yig74etvk7uua).
+Aim little to left and down from bottom left edge of yellow board.
+Technique: Tap W + JUMPTHROW.
+Aim little to left from leaf branch, then jumpthrow.
+Aim slightly to right of moutains intersection only to avoid hitting wall (explained in margins video).
+Aim somewhere above, or in middle of leaf.
+Aim while crouch, then stand and left click throw.
+Aim while standing, then crouch and jumpthrow.
+Align anywhere along wall so you can see 3-4 windows on right of crosshair. You have a small throw timing margin between achieving good velocity and hitting the box.
+Align vertically with the barcode on the box as shown in the image; horizontal alignment doesn't matter as long as it's between the two wooden beams as shown in the image.
+Avoid using smoke grenades as they provide opportunities for CTs to manipulate positions around the B site, causing delays for TTs trying to clear the site.  
+However, smoke grenades can be strategically employed for a B Split or a rapid eco plant.
+
+**Disadvantages:**
+- Grants CTs room to maneuver and strategically position themselves around the B site.
+
+**Advantages:**
+- Discourages long-range engagements with CTs, promoting close-range combat, making it effective for eco or half-buy rounds.
+- Blocks the line of sight from backsite and inside from the apps, disrupting the enemy's vision.
+- Blocks visibility from bench and inside towards short, creating advantageous situations for attackers.
+
+Avoid using smoke grenades as they provide opportunities for CTs to manipulate positions around the B site, causing delays for TTs trying to clear the site.  
+However, smoke grenades can be strategically employed for a B Split or a rapid eco plant.
+
+**Disadvantages:**
+- Grants CTs room to maneuver and strategically position themselves around the B site.
+
+**Advantages:**
+- Discourages long-range engagements with CTs, promoting close-range combat, making it effective for eco or half-buy rounds.
+- Blocks the line of sight from backsite and inside from the apps, disrupting the enemy's vision.
+- Blocks visibility from bench and inside towards short, creating advantageous situations for attackers.
+
+**Technique:**  
+Align horizontally with middle of dark frame on the left.  
+Allign vertically is not strict, but you can align with darker spot over bottom window.
+Break glass
+Break glass before throwing.
+This flash blinds most outside tt's places and make easy for ct's to peek right after.
+Chain with [this molotov](/inferno/clmj879fn007qigynzef1h6g8).
+Chain with [this smoke](/inferno/clmj835o9007kigyn2g8h60yj).
+Crouchwalk for 0.5 second and jumpthrow.
+Easy to avoid flash, but it can still make an impact.
+Find darker part of texture and aim in middle of it.
+You have to be precise with this one.
+Flash to blind baloons ct player.
+Small margin between throw and hitting exit frame.
+Flash to help get into B site. It shouldn't blind teammates as they walk close to ct side wall.
+Run for around 0.5 second and jumpthrow.
+Flash to help teammates peek car.
+This wont blind ct corner player if hes not peeking very wide.
+Flash to help teammates push short. Can be thrown into smoke.
+Very loose lineup, for simplicity aim at lamp.
+Generic flash.
+Generic window smoke from boxes/top mid wall,
+throw when max velocity reached. Can be thrown starting anywhere along top mid wall behind boxes as long as you hug wall.
+Getting exactly into corner is not necessary, as long as lineup element is in middle of door frame it's ok.
+Hold shift walk for fraction of second, throw and hold shift until full release. With perfect timing you will burn divider and corner behind.
+If you throw too late, left corner won't be smoked.
+It won't blind player if he is holding tight angle in double doors.
+Lineup crouching, throw standing.
+Aim at top left part of dot.
+Lineup vertically with darker dot at bottom. Horizontal lineup has big margin.
+Lineup while crouching, stand then throw.
+Lineup, +w, when max vecority reached throw.
+Make sure you stand **on bricks**, it's not ground level but slightly elevated.
+Molotov to stop CTs pushing water.
+Throw moment after passing wall.
+No description.
+No strict placment, align to wall anywhere along white ruined part of wall. Aim excactly at darker dot.
+No strict placment.
+Positionning does not have to be precise.
+Press W for fraction of second and throw.
+Press shift+w, then throw.
+Reach max velocity and throw.
+Run forward and throw when max velocity reached. Forgivable throw timing.
+Self pop flash. Can also be uesd for support.
+Smoke to cut off players in arch during B rush, combined with [this smoke](/mirage/clmeonug6001yigcq4hkzmehs). Typically thrown by the two players with the latest spawns, i.e., those who spawn farthest from the B site.
+
+Smoke to cut off players in arch during B rush, combined with [this smoke](/mirage/clmeoqaq60026igcq3omltka7). Typically thrown by the two players with the latest spawns, i.e., those who spawn farthest from the B site.
+
+Smoke to cut off players in arch during a B execution, combined with [this smoke](/mirage/clmeosleg002cigcqicis0521).
+
+Smoke to cut off players in arch during a B execution, combined with [this smoke](/mirage/clmeoumht002iigcqhr3m9uae). Note that this smoke does not block vision from short.
+Smoke used for instantly extinguish CT's molotovs like [this](/overpass/clmq9889d003eigwhab5bg2i7).
+Support flash for teammates walking out top mid.
+Tap W + JUMPTHROW
+This flash doesn't flash teammates entering site and flash most spots on A site giving preatty no time to react.
+This flash wont blind teammates entering short, might blind teammates exiting monster.  
+Aim slightly to left of railing joint.
+This smoke is intended to extinguish ct's pipe molotovs. As like on second video.
+Technique: Tap W + JUMPTHROW.
+This smoke provides an opportunity to peek short with minimal exposure, and opponents may not even see you, especially when they are not aware of this position.
+Throw just before running into frame, just like in image shown. You have to keep running after releasing mouse button.
+throwPos: setpos_exact 568.981140 -2224.027588 -39.968750;setang_exact 0.000000 -162.830429 0.000000 setpos 568.981140 -2224.027588 24.031250;setang -8.165365 -164.359390 0.000000
+Throw reaching shadow line.
+Throw spot doesn't matter as long as you throw through this window and don't hit frame with nade.
+Throw when max velocity reached.
+Throw when reaching bottom of metal thingy. Little margin.
+Throw while beeing about middle of red container.
+Tight timing to throw it properly.
+Trajectory depends on when you throw the flash. Throwing it later results in no frame bounce, and it lands lower and further from the window.
+Very loose and quite hard to throw lineup.
+You can throw it anywhere inside the red polygon to reach maximum velocity and throw.
+You dont have to be precise with spot alignment.
+You have to be able to see brown window, otherwise you will hit wall next to you with nade.
+You have to be precise here, aim little to right of wall crack, ideally between crack and darker spot as in video.
+setPos2: setpos_exact 783.968750 -1455.968750 -415.968750;setang_exact 0.000000 161.732147 0.000000setpos 783.968750 -1455.968750 -351.965515;setang -4.838440 161.732147 0.000000
+setPos2: setpos_exact 783.968750 -1455.968750 -415.968750;setang_exact 0.000000 161.732147 0.000000setpos 783.968750 -1455.968750 -351.968750;setang -4.864840 160.887421 0.000000
+setpos2: setpos_exact -200.145752 -1063.054688 26.742867;setang_exact 0.000000 132.977844 0.000000 setpos -200.145752 -1063.054688 86.387032;setang -3.489197 132.977844 0.000000
+setpos_exact -802.194092 467.286255 -28.742065;setang_exact 0.000000 16.395035 0.000000setpos -802.194092 467.286255 34.507912;setang -30.108368 16.395035 0.000000
+throw setPos: setpos_exact -800.173767 464.496826 -28.298584;setang_exact 0.000000 13.337067 0.000000setpos -800.173767 464.496826 34.768539;setang -29.601974 13.337067 0.000000
