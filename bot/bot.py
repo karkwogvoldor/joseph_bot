@@ -59,6 +59,79 @@ async def help_cmd(ctx):
     resposta += '📖 `!help` — exibe essa mensagem\n\n'
     resposta += '💡 O `<destino>` é opcional — sem ele o bot lista os destinos disponíveis!\n'
     await ctx.send(resposta)
+    
+@bot.command(name='ajuda')
+async def ajuda(ctx, comando: str = None):
+    if comando is None:
+        await ctx.send('💡 Use `!ajuda <comando>`. Exemplo: `!ajuda smoke`')
+        return
+
+    comandos = {
+        'smoke': (
+            '💨 **Comando !smoke**\n\n'
+            'Busca smokes disponíveis para um mapa.\n\n'
+            '**Uso:**\n'
+            '`!smoke <mapa>` → lista todos os destinos\n'
+            '`!smoke <mapa> <destino>` → mostra as origens disponíveis\n\n'
+            '**Exemplos:**\n'
+            '`!smoke mirage`\n'
+            '`!smoke mirage janela`\n'
+            '`!smoke inferno banana`'
+        ),
+        'flash': (
+            '⚡ **Comando !flash**\n\n'
+            'Busca flashbangs disponíveis para um mapa.\n\n'
+            '**Uso:**\n'
+            '`!flash <mapa>` → lista todos os destinos\n'
+            '`!flash <mapa> <destino>` → mostra as origens disponíveis\n\n'
+            '**Exemplos:**\n'
+            '`!flash mirage`\n'
+            '`!flash mirage janela`'
+        ),
+        'molotov': (
+            '🔥 **Comando !molotov**\n\n'
+            'Busca molotovs disponíveis para um mapa.\n\n'
+            '**Uso:**\n'
+            '`!molotov <mapa>` → lista todos os destinos\n'
+            '`!molotov <mapa> <destino>` → mostra as origens disponíveis\n\n'
+            '**Exemplos:**\n'
+            '`!molotov inferno`\n'
+            '`!molotov inferno banana`'
+        ),
+        'he': (
+            '💥 **Comando !he**\n\n'
+            'Busca granadas HE disponíveis para um mapa.\n\n'
+            '**Uso:**\n'
+            '`!he <mapa>` → lista todos os destinos\n'
+            '`!he <mapa> <destino>` → mostra as origens disponíveis\n\n'
+            '**Exemplos:**\n'
+            '`!he mirage`\n'
+            '`!he mirage connector`'
+        ),
+    }
+
+    if comando.lower() not in comandos:
+        await ctx.send(f'❌ Comando **{comando}** não encontrado. Use `!help` para ver todos os comandos.')
+        return
+
+    await ctx.send(comandos[comando.lower()])
+
+
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if bot.user.mentioned_in(message):
+        resposta = f'👋 Olá **{message.author.name}**! Bem-vindo ao Joseph Bot!\n\n'
+        resposta += '📖 Use `!help` para ver todos os comandos disponíveis.\n'
+        resposta += '🗺️ Use `!mapas` para ver os mapas disponíveis.\n'
+        resposta += '💣 Use `!tipos` para ver os tipos de granadas.\n'
+        resposta += '💡 Use `!ajuda <granada>` para detalhes de um comando específico.\n'
+        await message.channel.send(resposta)
+
+    await bot.process_commands(message)
+    
 
 def formatar_info(granada) -> str:
     info = '📋 **Como executar:**\n'
