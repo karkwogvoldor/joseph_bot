@@ -23,6 +23,7 @@ def resolver_destino(mapa: str, termo: str) -> str:
 intents = discord.Intents.default()
 intents.message_content = True
 
+
 bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 
 @bot.command(name='mapas')
@@ -94,6 +95,13 @@ async def molotov(ctx, mapa, destino=None):
     await buscar_nade(ctx, mapa, destino, 'molotov')
     
 async def buscar_nade(ctx, mapa: str, destino, tipo):
+    
+    mapa_existe = await sync_to_async(lambda: Mapa.objects.filter(slug=mapa.lower()).exists())()
+
+    if not mapa_existe:
+        await ctx.send(f'❌ Mapa **{mapa}** não encontrado. Use `!mapas` para listar os mapas disponíveis.')
+        return
+    
     if destino is None:
         buscar = sync_to_async(lambda: list(Granada.objects.filter(
             mapa__slug=mapa.lower(),
