@@ -2,7 +2,6 @@ from asgiref.sync import sync_to_async
 from nades.models import Granada
 from discord.ext import commands
 import discord
-import os
 from urllib.parse import quote
 from bot.traducoes import TRADUCOES, NOMES_PT, THROW_PT, MODEL_PT
 from nades.models import Granada, Mapa
