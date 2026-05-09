@@ -147,37 +147,6 @@ def formatar_info(granada) -> str:
     
     return info
 
-@bot.command(name='debug')
-async def debug(ctx):
-    buscar = sync_to_async(lambda: list(Granada.objects.values(
-        'throw_type', 'model_state', 'descricao', 'move_keys'
-    ).distinct()))
-    
-    resultados = await buscar()
-    
-    throw_types = sorted(set(r['throw_type'] for r in resultados if r['throw_type']))
-    model_states = sorted(set(r['model_state'] for r in resultados if r['model_state']))
-    move_keys_set = sorted(set(r['move_keys'] for r in resultados if r['move_keys']))
-    descricoes = sorted(set(r['descricao'] for r in resultados if r['descricao']))
-    
-    with open('debug_traducoes.txt', 'w', encoding='utf-8') as f:
-        f.write('=== THROW TYPES ===\n')
-        for t in throw_types:
-            f.write(f'{t}\n')
-        
-        f.write('\n=== MODEL STATES ===\n')
-        for m in model_states:
-            f.write(f'{m}\n')
-        
-        f.write('\n=== MOVE KEYS ===\n')
-        for k in move_keys_set:
-            f.write(f'{k}\n')
-        
-        f.write('\n=== DESCRIÇÕES ===\n')
-        for d in descricoes:
-            f.write(f'{d}\n')
-    
-    await ctx.send('✅ Arquivo `debug_traducoes.txt` gerado na raiz do projeto!')
 
 @bot.event
 async def on_ready():
